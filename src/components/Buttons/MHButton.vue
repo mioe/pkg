@@ -6,6 +6,7 @@ const handleClick = () => {
 
 <template>
 	<button
+		class="bg-red-200"
 		@click="handleClick"
 	>
 		<slot />
