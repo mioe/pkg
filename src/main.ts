@@ -1,4 +1,5 @@
 /**
  * Export components
  */
-export { default as HelloWorld } from './components/HelloWorld.vue'
+// @ts-ignore
+export { default as MHButton } from './components/Buttons/MHButton.vue'
