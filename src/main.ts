@@ -1,5 +1,14 @@
+import { createApp } from 'vue'
+import App from './App.vue'
+
 /**
- * Export components
+ * Styles
  */
-// @ts-ignore
-export { default as MHButton } from './components/Buttons/MHButton.vue'
+import 'uno.css'
+import './assets/sass/main.sass'
+
+/**
+ * init app
+ */
+createApp(App)
+	.mount('#app')

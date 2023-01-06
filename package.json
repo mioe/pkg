@@ -25,23 +25,21 @@
 		"pnpm": ">=7"
 	},
 	"scripts": {
-		"dev": "histoire dev --port 5173",
-		"build": "histoire build",
-		"preview": "histoire preview --port 5174",
+		"dev": "vite dev --host",
+		"build": "vite build --base /pkg",
+		"preview": "vite preview",
 		"lint": "eslint . --fix",
-		"pub": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build"
+		"lib": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build --mode lib"
 	},
 	"dependencies": {
 		"vue": "^3.2.45"
 	},
 	"devDependencies": {
-		"@histoire/plugin-vue": "^0.12.4",
 		"@iconify/utils": "^2.0.9",
 		"@mioe/eslint-config": "^0.1.4",
 		"@types/node": "^18.11.18",
 		"@vitejs/plugin-vue": "^4.0.0",
 		"eslint": "^8.31.0",
-		"histoire": "^0.12.4",
 		"typescript": "^4.9.3",
 		"unocss": "^0.48.0",
 		"vite": "^4.0.0",
