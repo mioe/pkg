@@ -26,10 +26,10 @@
 	},
 	"scripts": {
 		"dev": "histoire dev --port 5173",
-		"build": "histoire build",
+		"build": "histoire build && source fix-build.sh",
 		"preview": "histoire preview --port 5174",
 		"lint": "eslint . --fix",
-		"pub": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build  && pnpm publish"
+		"pub": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build"
 	},
 	"dependencies": {
 		"vue": "^3.2.45"
