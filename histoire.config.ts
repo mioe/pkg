@@ -11,8 +11,4 @@ export default defineConfig({
 	plugins: [
 		HstVue(),
 	],
-
-	vite: {
-		base: '/pkg/',
-	},
 })
