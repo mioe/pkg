@@ -14,14 +14,5 @@ export default defineConfig({
 
 	vite: {
 		base: '/pkg/',
-
-		build: {
-			lib: false,
-			rollupOptions: {
-				output: {
-					format: 'cjs',
-				},
-			},
-		},
 	},
 })

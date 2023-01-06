@@ -26,7 +26,7 @@
 	},
 	"scripts": {
 		"dev": "histoire dev --port 5173",
-		"build": "histoire build && source fix-build.sh",
+		"build": "histoire build",
 		"preview": "histoire preview --port 5174",
 		"lint": "eslint . --fix",
 		"pub": "vue-tsc --noEmit && vue-tsc --declaration --emitDeclarationOnly && vite build"
