@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link rel="icon" href="/pkg/favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/pkg/apple-touch-icon.png">
+		<!-- /favicon -->
+
+		<title>@mioe/pkg</title>
+		<script type="module" crossorigin src="/pkg/assets/index-2670a106.js"></script>
+		<link rel="stylesheet" href="/pkg/assets/index-1c878c35.css">
+	</head>
+	<body>
+		<div id="app"></div>
+
+		<!-- prefersDark -->
+		<script>
+			(function () {
+				const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+				const setting = localStorage.getItem('color-schema') || 'auto'
+				if (setting === 'dark' || (prefersDark && setting !== 'light'))
+					document.documentElement.classList.toggle('dark', true)
+			})()
+		</script>
+		<!-- /prefersDark -->
+		
+	</body>
+</html>
